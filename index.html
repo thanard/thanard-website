@@ -69,8 +69,8 @@
     img {
         display: inline;
         margin: 0 auto;
-        height: 100%;
-        width: auto;
+/*        height: 100%;
+        width: auto;*/
     }
 
   </style>
@@ -108,7 +108,7 @@
         </td>
         <td width="33%" border-radius="50%">
         <div class="image-cropper">
-            <img src="tk_circle.jpg">
+            <img src="tk_circle.jpg" height="100%" width="auto"> 
         </div>
         </td>
       </tr>
@@ -125,14 +125,14 @@
       </table>
 
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-      <tr>
-      <td width="25%"><img src="rope.gif" alt="rope" width="160" height="160">
-      <!--
-      <tr onmouseout="portrait_stop()" onmouseover="portrait_start()" >
+      <!-- <tr>
+      <td width="25%"><img src="rope_causal_infogan.jpg" alt="rope" width="200" height="150"> -->
+
+<!--       <tr onmouseout="portrait_stop()" onmouseover="portrait_start()" >
         <td width="25%">
           <div class="one">
-          <div class="two" id = 'portrait_image'><img src='portrait_after.png'></div>
-          <img src='portrait_before.png'>
+          <div class="two" id = 'portrait_image'><img src='rope-cigan.gif' width="200" height="150"></div>
+          <img src='rope_causal_infogan.png' width="200" height="150">
           </div>
           <script type="text/javascript">
           function portrait_start() {
@@ -142,7 +142,10 @@
           document.getElementById('portrait_image').style.opacity = "0";
           }
           portrait_stop()
-          </script> -->
+          </script>  -->
+        <tr>
+        <td width="25%"><img src="rope-start.jpg" onmouseenter="this.src ='rope-cigan.gif';" onmouseout="this.src = 'rope-start.jpg';" alt="rope" width="200" height="150">
+
         </td>
         <td valign="top" width="75%">
             <papertitle>Learning Plannable Representation with Causal InfoGAN</papertitle>
@@ -153,16 +156,66 @@
           Stuart Russell,
           Pieter Abbeel
           <br>
-          <em>Preprint</em>, 2018 <br>
+          <em>Proceedings of Neural Information Processing Systems (NIPS)</em>, 2018 <br>
           <a href="https://arxiv.org/abs/1807.09341">arxiv</a>
           /
           <a href="https://sites.google.com/view/causal-infogan/home"> website </a>
           /
-          poster
+          <a href="cigan-poster.pdf"> poster </a>
           /
           <a href="https://github.com/thanard/causal-infogan"> code </a>
   <!--         <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">blog post</a>
    -->        
+        </td>
+      </tr>
+      </table>
+
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+        <td width="25%"><img src="me-trpo-img/snake_mujoco.png" alt="mujoco" width="200" height="auto">
+        </td>
+        <td valign="top" width="75%">
+            <papertitle>Model Ensemble Trust Region Policy Optimization</papertitle>
+          <br>
+          Thanard Kurutach,
+          Ignasi Clavera,
+          Yan Duan,
+          Aviv Tamar,
+          Pieter Abbeel
+          <br>
+          <em>Proceedings of the International Conference on Learning Representations (ICLR)</em>, 2018 <br>
+          <a href="https://arxiv.org/abs/1802.10592">
+          arxiv</a>
+          /
+          <a href="https://sites.google.com/view/me-trpo/home"> website </a>
+          /
+          <a href="me-trpo-poster.pdf">
+          poster
+          </a>
+          /
+          <a href="https://github.com/thanard/me-trpo">
+          code </a>
+
+          <p>
+          <!-- This method also works with other score function gradient estimator such as <a href="https://arxiv.org/abs/1707.06347">PPO</a>. -->
+          </p>
+        </td>
+      </tr>
+      </table>
+
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+        <td width="25%"><img src="ddpmm-img-bright.png" alt="ddpmm" width="200" height="auto">
+        </td>
+        <td valign="top" width="75%">
+            <papertitle>Object-based World Modeling in Semi-Static Environments with Dependent Dirichlet-Process Mixtures</papertitle>
+          <br>
+          Lawson Wong, Thanard Kurutach, Leslie Pack Kaelbling, Tom&aacute;s Lozano-P&eacute;rez
+          <br>
+          <em>Proceedings of the International Joint Conference on Artificial Intelligence (IJCAI)</em>, 2016 <br>
+          <a href="https://arxiv.org/abs/1512.00573">arxiv</a>
+          /
+          <a href="ddpmm-poster.pdf"> poster </a>
         </td>
       </tr>
       </table>
